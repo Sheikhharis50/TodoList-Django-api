@@ -29,7 +29,7 @@ We are happy to receive bug reports, fixes, documentation enhancements,
 and other improvements.
 
 Please report bugs via the
-[github issue tracker](http://github.com/memcachier/examples-django/issues).
+[Sheikh Haris Zahid](mailto:sheikh.haris.zahid@hotmail.com).
 
 Master [git repository](http://github.com/memcachier/examples-django):
 
