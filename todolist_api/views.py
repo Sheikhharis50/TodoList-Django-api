@@ -25,7 +25,9 @@ class todoView(APIView):
 
         try:
             todos = todo.objects.all().order_by('id')
+            print("after todo queryset")
             result = todoSerializer(todos, many=True).data
+            print("after todo serializer")
             data['status'] = 1  # Means success
             data['message'] = 'Successful.'
             page_number = request.GET.get('page')
