@@ -9,3 +9,13 @@ class todo(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class ping(models.Model):
+    state = models.BooleanField(default=False)
+
+    def __str__(self):
+        if self.state:
+            return "True"
+        else:
+            return "False"

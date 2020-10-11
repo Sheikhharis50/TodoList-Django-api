@@ -8,3 +8,11 @@ class TodoModelAdmin(admin.ModelAdmin):
 
 
 admin.site.register(todo, TodoModelAdmin)
+
+
+class PingModelAdmin(admin.ModelAdmin):
+    list_display = ['id', 'state']
+    list_editable = ('state',)
+
+
+admin.site.register(ping, PingModelAdmin)

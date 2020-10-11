@@ -16,6 +16,22 @@ def testing(request):
     }, status=status.HTTP_200_OK)
 
 
+@api_view(('GET',))
+def pingToDB(request):
+    state = False
+    ping_obj = ping.objects.last()
+
+    if ping_obj.state:
+        state = True
+        ping_obj.state = False
+        ping_obj.save()
+
+    return Response(data={
+        "status": 1,
+        "state": state
+    }, status=status.HTTP_200_OK)
+
+
 class todoView(APIView):
     def get(self, request):
         """
@@ -71,6 +87,9 @@ class todoView(APIView):
             obj = todo.objects.create(
                 title=title
             )
+            ping_obj = ping.objects.last()
+            ping_obj.state = True
+            ping_obj.save()
             data['data'] = todoSerializer(obj).data
         except Exception as e:
             print(e)
@@ -129,6 +148,11 @@ class todoDetailView(APIView):
             td.title = title
             td.completed = completed
             td.save()
+
+            ping_obj = ping.objects.last()
+            ping_obj.state = True
+            ping_obj.save()
+
             data['data'] = todoSerializer(td).data
         except Exception as e:
             print(e)
@@ -147,6 +171,11 @@ class todoDetailView(APIView):
 
         try:
             todo.objects.get(id=id).delete()
+
+            ping_obj = ping.objects.last()
+            ping_obj.state = True
+            ping_obj.save()
+
             data['status'] = 1  # Means success
             data['message'] = 'Deleted Successfully.'
         except Exception as e:
