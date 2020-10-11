@@ -4,22 +4,14 @@ This is an Django api which is used by
 [TodoList-Harry](https://todolist-harry.herokuapp.com/) to create, delete, update, and get todos. 
 
 You can view a working version of this Website
-[here](https://todolist-harry.herokuapp.com/) which is deployed on [Heroku
-]
-Running this app on your local machine in development will work as
-well, although then you won't be using MemCachier -- you'll be using a
-local dummy cache. MemCachier is currently only available with various
-cloud providers.
+[here](https://todolist-harry.herokuapp.com/) which is deployed on 
+[Heroku]
 
-Setting up MemCachier to work in Django is very easy. You need to
-make changes to requirements.txt, settings.py, and any app code that
-you want cached. These changes are covered in detail below.
+## Database | MongoDB
 
-## Deploy to Heroku
+App saving data in MongoDB instance 
 
-You can deploy this app yourself to Heroku to play with.
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+[![Database](https://techcrunch.com/wp-content/uploads/2019/06/MongoDB_Logo_FullColorBlack_RGB.png)](https://cloud.mongodb.com)
 
 ## Building
 
