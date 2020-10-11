@@ -31,7 +31,7 @@ and other improvements.
 Please report bugs via the
 [Sheikh Haris Zahid](mailto:sheikh.haris.zahid@hotmail.com).
 
-Master [git repository](http://github.com/memcachier/examples-django):
+Master [git repository](http://github.com/Sheikhharis50/TodoList-Django-api.git):
 
 * `git clone git://github.com/Sheikhharis50/TodoList-Django-api.git
 
