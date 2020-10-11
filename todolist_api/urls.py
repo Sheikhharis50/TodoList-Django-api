@@ -6,4 +6,5 @@ from rest_framework import routers
 urlpatterns = [
     path('todo', todoView.as_view()),
     path('todo/<int:id>/', todoDetailView.as_view()),
+    path('testing', testing),
 ]

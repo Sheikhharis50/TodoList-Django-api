@@ -5,6 +5,15 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import generics, mixins, status, renderers
 from django.core.paginator import Paginator
+from rest_framework.decorators import api_view, renderer_classes
+
+
+@api_view(('GET',))
+def testing(request):
+    return Response(data={
+        "status": 1,
+        "message": "Hello World"
+    }, status=status.HTTP_200_OK)
 
 
 class todoView(APIView):
