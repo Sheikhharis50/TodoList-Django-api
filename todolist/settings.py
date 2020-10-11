@@ -75,7 +75,13 @@ WSGI_APPLICATION = 'todolist.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'todolist',
+        "CLIENT": {
+            "name": "todolist",
+            "host": "mongodb+srv://FbLk7Yv4raLvcRR:FbLk7Yv4raLvcRR@mongodb.0bqih.mongodb.net/todolist?retryWrites=true&w=majority",
+            "username": "FbLk7Yv4raLvcRR",
+            "password": "FbLk7Yv4raLvcRR",
+            "authMechanism": "SCRAM-SHA-1",
+        },
     }
 }
 
