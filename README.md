@@ -11,13 +11,13 @@ You can view a working version of this Website
 
 App saving data in MongoDB instance 
 
-[![Database](https://techcrunch.com/wp-content/uploads/2019/06/MongoDB_Logo_FullColorBlack_RGB.png) =250x](https://cloud.mongodb.com)
+[![Database](https://techcrunch.com/wp-content/uploads/2019/06/MongoDB_Logo_FullColorBlack_RGB.png| width=100)](https://cloud.mongodb.com)
 
 ## Frontent App
 
 Frontent app is develope on [React](https://reactjs.org/)
 
-[![React](https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png =250x)](https://reactjs.org/)
+[![React](https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png | width=100)](https://reactjs.org/)
 
 Check out Repository: [TodoList-Harry](https://github.com/Sheikhharis50/TodoList-React.git)
 
